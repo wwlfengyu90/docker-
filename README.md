@@ -26,8 +26,8 @@ docker学习教程
 ### 5.更新apt包
     $ sudo apt-get update
 
-### 5.安装DockerCE
+### 6.安装DockerCE
     $ sudo apt-get install docker-ce
 
-### 6.测试docker是否安装成功
+### 7.测试docker是否安装成功
     $ docker -v
