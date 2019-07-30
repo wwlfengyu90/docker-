@@ -1,5 +1,4 @@
-# docker
-docker学习教程
+# docker学习教程
 
 ## 安装Ubantu操作系统
 ### 1.安装Docker的AUFS存储驱动程序
