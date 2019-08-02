@@ -60,7 +60,7 @@
         $ sudo docker ps            //查看docker容器
         $ sudo docker ps -a         //查看docekr所有容器
     2).创建容器
-        交互式容器
+        交互式容器(临时启动一个容器,可以测试容器)
         $ sudo docker run -it --name=容器名 镜像名 /bin/bash
         守护式容器
         $ sudo docker run -di --name=容器名 镜像名
