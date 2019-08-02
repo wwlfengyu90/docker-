@@ -49,9 +49,19 @@
         }
 
 ## 二.Docker使用
-### 1.基础指令
+### 1.docker镜像基础指令
     $ sudo docker images        //查看当前拥有的所有docker镜像
     $ sudo docker search redis  //通过search,搜索redis相关镜像
     $ sudo docker pull redis    //通过pull,拉取指定redis镜像
     $ sudo docker rmi IMAGE ID  //通过images查看对应image id,移除对应image id镜像
+    
+### 2.docker容器基础使用
+    1).查看docker容器
+        $ sudo docker ps            //查看docker容器
+        $ sudo docker ps -a         //查看docekr所有容器
+    2).创建容器
+        交互式容器
+        $ sudo docker run -it --name=容器名 镜像名 /bin/bash
+        守护式容器
+        $ sudo docker run -di --name=容器名 镜像名
     
