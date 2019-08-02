@@ -52,6 +52,6 @@
 ### 1.基础指令
     $ sudo docker images        //查看当前拥有的所有docker镜像
     $ sudo docker search redis  //通过search,搜索redis相关镜像
-    $ sudo docker pull redis    //通过pull,安装指定redis镜像
+    $ sudo docker pull redis    //通过pull,拉取指定redis镜像
     $ sudo docker rmi IMAGE ID  //通过images查看对应image id,移除对应image id镜像
     
