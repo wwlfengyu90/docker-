@@ -1,6 +1,6 @@
 # docker学习教程
 
-## 安装Ubantu操作系统
+## 一.Ubantu操作系统安装docker
 ### 1.安装Docker的AUFS存储驱动程序
     $ sudo apt-get install \
     linux-image-extra-$(uname -r) \
@@ -30,3 +30,23 @@
 
 ### 7.测试docker是否安装成功
     $ docker -v
+
+## 二.启动、关闭等指令
+### 
+    $ sudo service docker start     //启动
+    $ sudo service docker stop      //停止
+    $ sudo service docker restart   //重启
+    $ sudo service docker status    //状态
+    
+## 三.配置ustc加速源
+### 1.切换到root角色
+    $ su root
+    $ 输入密码(虚拟机,可以使用sudo passwd root 更改root角色密码后再进行指令操作)
+### 2.配置
+    $ sudo cd /etc/docker
+    $ vi daemon.json
+        {
+            "registry-mirrors":["https://docker.mirrors.ustc.edu.cn"]
+        }
+
+## 四.
