@@ -31,22 +31,26 @@
 ### 7.测试docker是否安装成功
     $ docker -v
 
-## 二.启动、关闭等指令
-### 
+## 8.启动、关闭等指令
     $ sudo service docker start     //启动
     $ sudo service docker stop      //停止
     $ sudo service docker restart   //重启
     $ sudo service docker status    //状态
     
-## 三.配置ustc加速源
-### 1.切换到root角色
+### 9.配置ustc加速源
+### 9.1.切换到root角色
     $ su root
     $ 输入密码(虚拟机,可以使用sudo passwd root 更改root角色密码后再进行指令操作)
-### 2.配置
+### 9.2.配置
     $ sudo cd /etc/docker
     $ vi daemon.json
         {
             "registry-mirrors":["https://docker.mirrors.ustc.edu.cn"]
         }
 
-## 四.
+## 二.Docker使用
+### 1.基础指令
+    $ sudo docker images        //查看当前拥有的所有docker镜像
+    $ sudo docker search redis  //通过search,搜索redis相关镜像
+    $ sudo docker pull redis    //通过pull,安装指定redis镜像
+    
