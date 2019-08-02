@@ -14,7 +14,7 @@
     software-properties-common
     
 ### 3.添加docker的官方GPG密钥
-    $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg|sudo apt-key add-
+    $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg|sudo apt-key add -
 
 ### 4.设置stable稳定的仓库(stable稳定版每季度发不一次,Edge版每个月一次)
     $ sudo add-apt-repository \
