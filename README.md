@@ -62,6 +62,20 @@
     2).创建容器
         a).交互式容器(临时启动一个容器,可以测试容器)
             $ sudo docker run -it --name=容器名 镜像名 /bin/bash
+            eg: 
+                sudo docker run -it --name=iredis1 redis /bin/bash
         b).守护式容器
             创建：$ sudo docker run -di --name=容器名 镜像名
             重新编辑：$ sudo docker exec -it 容器名 /bin/bash
+            eg:
+                $ sudo docker run -di --name=iredis2 redis
+                $ sudo docker exec -it iredis2 /bin/bash
+    3).启动、停止、重启容器
+        $ sudo docker start 容器名         // 启动容器
+        $ sudo docker stop 容器名          // 停止容器
+        $ sudo docker restart 容器名       // 重启容器
+        eg:
+            $ sudo docker start iredis2 
+            $ sudo docker stop iredis2 
+            $ sudo docker restart iredis2 
+    
