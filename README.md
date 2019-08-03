@@ -78,4 +78,18 @@
             $ sudo docker start iredis2 
             $ sudo docker stop iredis2 
             $ sudo docker restart iredis2 
+    4).文件拷贝
+        a).宿主机 --> docker容器
+            $ sudo docker cp 宿主机文件地址 docker容器名:docker容器文件地址
+            eg:
+                $ sudo docker cp /data/test.txt myredis2:/data
+        b).docker容器 --> 宿主机(与a指令，交互路径位置)
+            $ sudo docker cp  docker容器名:docker容器文件地址 宿主机文件地址
+            eg:
+                $ sudo docker cp myredis2:/data /data/test.txt
+    5).目录挂载(创建docker容器时,指定宿主机目录和docker容器目录,实现数据共享)
+        $ sudo docker run -di --name=容器名 -v 宿主机目录:docker容器目录 镜像名
+        eg:
+            $ sudo docker run -di --name=myredis3 -v /data/temp:/data/tmp redis
     
+        
